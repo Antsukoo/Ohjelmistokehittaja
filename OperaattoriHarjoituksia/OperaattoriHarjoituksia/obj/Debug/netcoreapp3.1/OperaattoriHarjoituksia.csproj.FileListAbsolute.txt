@@ -1,0 +1,12 @@
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\OperaattoriHarjoituksia\OperaattoriHarjoituksia\bin\Debug\netcoreapp3.1\OperaattoriHarjoituksia.exe
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\OperaattoriHarjoituksia\OperaattoriHarjoituksia\bin\Debug\netcoreapp3.1\OperaattoriHarjoituksia.deps.json
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\OperaattoriHarjoituksia\OperaattoriHarjoituksia\bin\Debug\netcoreapp3.1\OperaattoriHarjoituksia.runtimeconfig.json
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\OperaattoriHarjoituksia\OperaattoriHarjoituksia\bin\Debug\netcoreapp3.1\OperaattoriHarjoituksia.runtimeconfig.dev.json
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\OperaattoriHarjoituksia\OperaattoriHarjoituksia\bin\Debug\netcoreapp3.1\OperaattoriHarjoituksia.dll
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\OperaattoriHarjoituksia\OperaattoriHarjoituksia\bin\Debug\netcoreapp3.1\OperaattoriHarjoituksia.pdb
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\OperaattoriHarjoituksia\OperaattoriHarjoituksia\obj\Debug\netcoreapp3.1\OperaattoriHarjoituksia.csproj.CoreCompileInputs.cache
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\OperaattoriHarjoituksia\OperaattoriHarjoituksia\obj\Debug\netcoreapp3.1\OperaattoriHarjoituksia.AssemblyInfoInputs.cache
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\OperaattoriHarjoituksia\OperaattoriHarjoituksia\obj\Debug\netcoreapp3.1\OperaattoriHarjoituksia.AssemblyInfo.cs
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\OperaattoriHarjoituksia\OperaattoriHarjoituksia\obj\Debug\netcoreapp3.1\OperaattoriHarjoituksia.dll
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\OperaattoriHarjoituksia\OperaattoriHarjoituksia\obj\Debug\netcoreapp3.1\OperaattoriHarjoituksia.pdb
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\OperaattoriHarjoituksia\OperaattoriHarjoituksia\obj\Debug\netcoreapp3.1\OperaattoriHarjoituksia.genruntimeconfig.cache
