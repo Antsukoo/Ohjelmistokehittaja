@@ -1,0 +1,13 @@
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu2\Harjoitussivu2\bin\Debug\netcoreapp3.1\Harjoitussivu2.exe
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu2\Harjoitussivu2\bin\Debug\netcoreapp3.1\Harjoitussivu2.deps.json
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu2\Harjoitussivu2\bin\Debug\netcoreapp3.1\Harjoitussivu2.runtimeconfig.json
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu2\Harjoitussivu2\bin\Debug\netcoreapp3.1\Harjoitussivu2.runtimeconfig.dev.json
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu2\Harjoitussivu2\bin\Debug\netcoreapp3.1\Harjoitussivu2.dll
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu2\Harjoitussivu2\bin\Debug\netcoreapp3.1\Harjoitussivu2.pdb
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu2\Harjoitussivu2\obj\Debug\netcoreapp3.1\Harjoitussivu2.csprojAssemblyReference.cache
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu2\Harjoitussivu2\obj\Debug\netcoreapp3.1\Harjoitussivu2.csproj.CoreCompileInputs.cache
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu2\Harjoitussivu2\obj\Debug\netcoreapp3.1\Harjoitussivu2.AssemblyInfoInputs.cache
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu2\Harjoitussivu2\obj\Debug\netcoreapp3.1\Harjoitussivu2.AssemblyInfo.cs
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu2\Harjoitussivu2\obj\Debug\netcoreapp3.1\Harjoitussivu2.dll
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu2\Harjoitussivu2\obj\Debug\netcoreapp3.1\Harjoitussivu2.pdb
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu2\Harjoitussivu2\obj\Debug\netcoreapp3.1\Harjoitussivu2.genruntimeconfig.cache
