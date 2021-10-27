@@ -310,7 +310,29 @@ namespace Harjoitussivu2
 
         static void tehtava6(int test)
         {
+            Console.WriteLine("Anna minulle bonuspisteiden määrä 1-9 ja kerron sen sille määrätyllä luvulla: ");
+            int num = int.Parse(Console.ReadLine());
 
+            int sum = 0;
+
+            if (num < 1 || num > 9)
+            {
+                Console.WriteLine("Määrän täytyy olla 1-9!");
+            }else if (num > 0 && num < 4)
+            {
+                sum = num * 10;
+                Console.WriteLine("Kertomisen jälkeen pisteenne nousi lukuun: " + sum);
+            }
+            else if (num > 3 && num < 7)
+            {
+                sum = num * 100;
+                Console.WriteLine("Kertomisen jälkeen pisteenne nousi lukuun: " + sum);
+            }
+            else if (num > 6 && num < 10)
+            {
+                sum = num * 1000;
+                Console.WriteLine("Kertomisen jälkeen pisteenne nousi lukuun: " + sum);
+            }
 
             if (test == 0)
             {
@@ -326,26 +348,231 @@ namespace Harjoitussivu2
         {
             Console.WriteLine("Anna luku 0-999 ja muutan sen sanaksi.");
             int num = int.Parse(Console.ReadLine());
-
+            string word = "";
+            
 
             if (num.ToString().Length == 1)
             {
-                
+                word += tehtava75(num) + ".";
             }
 
-            if (num.ToString().Length == 2)
+            if (num.ToString().Length == 2 && num.ToString()[0] != '0')
             {
-                for (int a = 0; a < 9; a++)
+                bool done = false;
+                for (int a = 2; a < 10; a++)
                 {
-                    if (num.ToString()[0] == a.ToString()[0])
+                    
+                    if (num.ToString()[0] == '1' && !done)
                     {
 
+                        string num2 = num.ToString()[1].ToString();
+
+                        
+
+                        switch (num2)
+                        {
+                            case "0":
+                                word += "kymmenen.";
+                                done = true;
+                                break;
+
+                            case "1":
+                                word += tehtava75(1) + "toista";
+                                done = true;
+                                break;
+
+                            case "2":
+                                word += tehtava75(2) + "toista";
+                                done = true;
+                                break;
+
+                            case "3":
+                                word += tehtava75(3) + "toista";
+                                done = true;
+                                break;
+
+                            case "4":
+                                word += tehtava75(4) + "toista";
+                                done = true;
+                                break;
+
+                            case "5":
+                                word += tehtava75(5) + "toista";
+                                done = true;
+                                break;
+
+                            case "6":
+                                word += tehtava75(6) + "toista";
+                                done = true;
+                                break;
+
+                            case "7":
+                                word += tehtava75(7) + "toista";
+                                done = true;
+                                break;
+
+                            case "8":
+                                word += tehtava75(8) + "toista";
+                                done = true;
+                                break;
+
+                            case "9":
+                                word += tehtava75(9) + "toista";
+                                done = true;
+                                break;
+                        }
+                    }
+
+                    if (num.ToString()[0] == a.ToString()[0] && num.ToString()[0] != '1')
+                    {
+                        word += tehtava75(a) + "kymmentä";
+                    }
+                }
+
+                for (int b = 1; b < 10; b++) 
+                {
+
+                    if (num.ToString()[1] == b.ToString()[0] && num.ToString()[1] != '0' && num.ToString()[0] != '1')
+                    {
+                        word += " " + tehtava75(b) + ".";
+                    }
+
+                    if (num.ToString()[1] == b.ToString()[0] && num.ToString()[1] != '0' && num.ToString()[0] == '1')
+                    {
+                        word += ".";
+                    }
+
+                    if (num.ToString()[1] == b.ToString()[0] && num.ToString()[1] == '0' && num.ToString()[0] == '1')
+                    {
+                        word += ".";
                     }
                 }
             }
 
+            if (num.ToString().Length == 3 && num.ToString()[0] != '0')
+            {
+                bool done = false;
+                bool done2 = false;
+                for (int c = 2; c < 10; c++)
+                {
+                    if (num.ToString()[0] == c.ToString()[0] && num.ToString()[0] != '1')
+                    {
+                        word += tehtava75(c) + "sataa";
+                    }
+
+                    if (num.ToString()[0] == '1' && !done2)
+                    {
+                        done2 = true;
+                        word += "sata";
+                    }
+                }
+
+                for (int d = 1; d < 10; d++)
+                {
+                    
+                    if (num.ToString()[1] == 0)
+                    {
+                        word += "";
+                    }
+
+                    if (num.ToString()[1] == d.ToString()[0] && num.ToString()[1] != '0' && num.ToString()[1] != '1')
+                    {
+                        word += " " + tehtava75(d) + "kymmentä";
+                    } 
+                }
+
+                for (int e = 1; e < 10; e++)
+                {
+                    if (num.ToString()[1] == '1' && !done)
+                    {
+
+                        string num2 = num.ToString()[2].ToString();
+
+                        switch (num2)
+                        {
+                            case "0":
+                                word += "kymmenen.";
+                                done = true;
+                                break;
+
+                            case "1":
+                                word += tehtava75(1) + "toista";
+                                done = true;
+                                break;
+
+                            case "2":
+                                word += tehtava75(2) + "toista";
+                                done = true;
+                                break;
+
+                            case "3":
+                                word += tehtava75(3) + "toista";
+                                done = true;
+                                break;
+
+                            case "4":
+                                word += tehtava75(4) + "toista";
+                                done = true;
+                                break;
+
+                            case "5":
+                                word += tehtava75(5) + "toista";
+                                done = true;
+                                break;
+
+                            case "6":
+                                word += tehtava75(6) + "toista";
+                                done = true;
+                                break;
+
+                            case "7":
+                                word += tehtava75(7) + "toista";
+                                done = true;
+                                break;
+
+                            case "8":
+                                word += tehtava75(8) + "toista";
+                                done = true;
+                                break;
+
+                            case "9":
+                                word += tehtava75(9) + "toista";
+                                done = true;
+                                break;
+                        }
+                    }
+                    if (num.ToString()[2] == 0)
+                    {
+                        word += ".";
+                    }
+
+                    if (num.ToString()[2] == e.ToString()[0] && num.ToString()[2] != '0' && num.ToString()[1] == '1')
+                    {
+                        word += ".";
+                    }
+
+                    if (num.ToString()[2] == e.ToString()[0] && num.ToString()[2] == '0' && num.ToString()[1] == '1')
+                    {
+                        word += ".";
+                    }
+
+                    if (num.ToString()[2] == e.ToString()[0] && num.ToString()[2] != '0' && num.ToString()[1] != '1')
+                    {
+                        word += " " + tehtava75(e) + ".";
+                    }
+                }                
+            }
+
+            if (word != "sata")
+            {
+                Console.WriteLine(word);
+            }
+            else
+            {
+                Console.WriteLine(word + ".");
+            }
             
-            
+
             if (test != 0)
             {
                 tehtava7(test);
@@ -359,43 +586,43 @@ namespace Harjoitussivu2
             {
 
                 case 0:
-                    sana = "Nolla";
+                    sana = "nolla";
                     break;
 
                 case 1:
-                    sana = "Yksi.";
+                    sana = "yksi";
                     break;
 
                 case 2:
-                    sana = "Kaksi.";
+                    sana = "kaksi";
                     break;
 
                 case 3:
-                    sana = "Kolme.";
+                    sana = "kolme";
                     break;
 
                 case 4:
-                    sana = "Neljä.";
+                    sana = "neljä";
                     break;
 
                 case 5:
-                    sana = "Viisi.";
+                    sana = "viisi";
                     break;
 
                 case 6:
-                    sana = "Kuusi.";
+                    sana = "kuusi";
                     break;
 
                 case 7:
-                    sana = "Seitsemän.";
+                    sana = "seitsemän";
                     break;
 
                 case 8:
-                    sana = "Kahdeksan.";
+                    sana = "kahdeksan";
                     break;
 
                 case 9:
-                    sana = "Yhdeksän.";
+                    sana = "yhdeksän";
                     break;
                     
             }
