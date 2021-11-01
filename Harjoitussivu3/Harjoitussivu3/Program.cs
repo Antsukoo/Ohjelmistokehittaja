@@ -326,11 +326,11 @@ namespace Harjoitussivu3
 
             if (test == 0)
             {
-                tehtava11(test);
+                tehtava12(test);
             }
             else
             {
-                tehtava10(test);
+                tehtava11(test);
             }
         }
 
@@ -368,11 +368,11 @@ namespace Harjoitussivu3
 
             if (test == 0)
             {
-                tehtava11(test);
+                tehtava13(test);
             }
             else
             {
-                tehtava10(test);
+                tehtava12(test);
             }
         }
 
@@ -394,59 +394,129 @@ namespace Harjoitussivu3
 
             if (test == 0)
             {
-                tehtava11(test);
+                tehtava14(test);
             }
             else
             {
-                tehtava10(test);
+                tehtava13(test);
             }
         }
 
         static void tehtava14(int test)
         {
 
+            Console.WriteLine("Anna minulle 2 kokonaislukua ja kerron kuinka moni niistä on positiivisia tai negatiivisia.");
 
-            if (test == 0)
+            Console.WriteLine("Anna ensimmäinen luku: ");
+            int num1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Anna toinen luku: ");
+            int num2 = int.Parse(Console.ReadLine());
+
+            if (num1 < 0 && num2 < 0)
             {
-                tehtava11(test);
+                Console.WriteLine("Molemmat ovat negatiivisia.");
+
+            }
+            else if(num1 < 0 ^ num2 < 0)
+            {
+                Console.WriteLine("Toinen on positiivinen ja toinen negatiivinen.");
             }
             else
             {
-                tehtava10(test);
+                Console.WriteLine("Molemmat ovat positiivisia.");
+            }
+
+            if (test == 0)
+            {
+                tehtava15(test);
+            }
+            else
+            {
+                tehtava14(test);
             }
         }
 
         static void tehtava15(int test)
         {
+            Console.WriteLine("Anna minulle lause niin kerron sinulle sen pisimmän sanan: ");
+            string lause = Console.ReadLine();
 
+            string[] lauseenSanat = lause.Split(" ");
 
+            int sananpit = 0;
+            int aikaisempisananpit = 0;
+
+            foreach (string x in lauseenSanat)
+            {
+                for (int i = 0; i < x.Length; i++)
+                {
+                    sananpit++;
+                }
+
+                Console.WriteLine(sananpit);
+                if (sananpit > aikaisempisananpit)
+                {
+                    aikaisempisananpit = sananpit;
+                    sananpit = 0;
+                }
+            }
+
+            for (int a = 0; a < lauseenSanat.Length; a++)
+            {
+                if (lauseenSanat[a].Length == aikaisempisananpit)
+                {
+                    Console.WriteLine(lauseenSanat[a]);
+                }
+            }
+         
             if (test == 0)
             {
-                tehtava11(test);
+                tehtava16(test);
             }
             else
             {
-                tehtava10(test);
+                tehtava15(test);
             }
         }
 
         static void tehtava16(int test)
         {
+            Console.WriteLine("This is just here to not overflow the system. Write anything to start: ");
+            Console.ReadLine();
 
+            for (int i = 0; i < 100; i++)
+            {
+                if (i % 2 != 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            
+            
 
             if (test == 0)
             {
-                tehtava11(test);
+                tehtava17(test);
             }
             else
             {
-                tehtava10(test);
+                tehtava16(test);
             }
         }
 
         static void tehtava17(int test)
         {
+            Console.WriteLine("This is just here to not overflow the system. Write anything to start: ");
+            Console.ReadLine();
 
+            for (int i = 0; i < 100; i++)
+            {
+                if (i % 3 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
 
             if (test != 0)
             {

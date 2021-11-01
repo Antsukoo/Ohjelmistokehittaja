@@ -10,3 +10,4 @@ C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu3\Harjoitu
 C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu3\Harjoitussivu3\obj\Debug\netcoreapp3.1\Harjoitussivu3.dll
 C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu3\Harjoitussivu3\obj\Debug\netcoreapp3.1\Harjoitussivu3.pdb
 C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu3\Harjoitussivu3\obj\Debug\netcoreapp3.1\Harjoitussivu3.genruntimeconfig.cache
+C:\Users\anton.kuusisto\source\repot\Ohjelmistokehittaja\Harjoitussivu3\Harjoitussivu3\obj\Debug\netcoreapp3.1\Harjoitussivu3.csprojAssemblyReference.cache
