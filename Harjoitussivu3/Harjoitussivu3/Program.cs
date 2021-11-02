@@ -11,8 +11,20 @@ namespace Harjoitussivu3
 
         static void TehtavaValinta()
         {
-            Console.WriteLine("Testausta varten valitse tehtävän numero jonka haluat testata (1-7), tai 0 jos haluat käydä kaikki läpi: ");
-            int test = int.Parse(Console.ReadLine());
+        ALKU:
+            Console.WriteLine("Testausta varten valitse tehtävän numero jonka haluat testata (1-17), tai 0 jos haluat käydä kaikki läpi: ");
+            int test = 0;
+            
+            try
+            {
+                test = int.Parse(Console.ReadLine());
+            }
+            catch
+            {
+                Console.WriteLine("Syöttämäsi tieto on virheellinen!");
+                goto ALKU;
+            }
+            
 
             switch (test)
             {
@@ -202,15 +214,25 @@ namespace Harjoitussivu3
 
         static void tehtava6(int test)
         {
-            Console.WriteLine("Anna kaksi lukua niin lasken ne yhteen.");
-            Console.WriteLine("Anna ensimmäinen luku: ");
-            float num1 = float.Parse(Console.ReadLine());
+            ALKU:
+            try
+            {
+                Console.WriteLine("Anna kaksi lukua niin lasken ne yhteen.");
+                Console.WriteLine("Anna ensimmäinen luku: ");
+                float num1 = float.Parse(Console.ReadLine());
 
-            Console.WriteLine("Anna toinen luku: ");
-            float num2 = float.Parse(Console.ReadLine());
-            float sum = num1 + num2;
+                Console.WriteLine("Anna toinen luku: ");
+                float num2 = float.Parse(Console.ReadLine());
+                float sum = num1 + num2;
 
-            Console.WriteLine(num1 + " + " + num2 + " on yhtä kuin " + sum);
+                Console.WriteLine(num1 + " + " + num2 + " on yhtä kuin " + sum);
+            }
+            catch
+            {
+                Console.WriteLine("Syöttämäsi tieto on virheellinen!");
+                goto ALKU;
+            }
+            
 
             if (test == 0)
             {
@@ -224,11 +246,21 @@ namespace Harjoitussivu3
 
         static void tehtava7(int test)
         {
-            Console.WriteLine("Anna celsius luku niin lasken kuinka paljon se on fahrenheitteina: ");
-            float cel = float.Parse(Console.ReadLine());
-            float fahr = cel * 1.8f + 32f;
+            ALKU:
+            try
+            {
+                Console.WriteLine("Anna celsius luku niin lasken kuinka paljon se on fahrenheitteina: ");
+                float cel = float.Parse(Console.ReadLine());
+                float fahr = cel * 1.8f + 32f;
 
-            Console.WriteLine("27 Celsius astetta on: " + fahr + " fahrenheittia.");
+                Console.WriteLine("27 Celsius astetta on: " + fahr + " fahrenheittia.");
+            }
+            catch
+            {
+                Console.WriteLine("Syöttämäsi tieto on virheellinen!");
+                goto ALKU;
+            }
+            
 
             if (test == 0)
             {
@@ -242,19 +274,31 @@ namespace Harjoitussivu3
 
         static void tehtava8(int test)
         {
-            Console.WriteLine("Anna kaksi lukua niin kerron sinulle niiden plus, miinus, kerto ja jakolaskujen tuloksen.");
-            Console.WriteLine("Anna ensimmäinen luku: ");
-            float num1 = float.Parse(Console.ReadLine());
+            ALKU:
+            try
+            {
+                Console.WriteLine("Anna kaksi lukua niin kerron sinulle niiden plus, miinus, kerto ja jakolaskujen tuloksen.");
+                Console.WriteLine("Anna ensimmäinen luku: ");
+                float num1 = float.Parse(Console.ReadLine());
 
-            Console.WriteLine("Anna toinen luku: ");
-            float num2 = float.Parse(Console.ReadLine());
+                Console.WriteLine("Anna toinen luku: ");
+                float num2 = float.Parse(Console.ReadLine());
 
-            float sumpl = num1 + num2;
-            float summi = num1 - num2;
-            float summu = num1 * num2;
-            float sumdi = num1 / num2;
+                float sumpl = num1 + num2;
+                float summi = num1 - num2;
+                float summu = num1 * num2;
+                float sumdi = num1 / num2;
 
-            Console.WriteLine(num1 + " + " + num2 + " = " + sumpl + ", " + num1 + " - " + num2 + " = " + summi + ", " + num1 + " * " + num2 + " = " + summu + ", " + num1 + " / " + num2 + " = " + sumdi + ".");
+                Console.WriteLine(num1 + " + " + num2 + " = " + sumpl + ", " + num1 + " - " + num2 + " = " + summi + ", " + num1 + " * " + num2 + " = " + summu + ", " + num1 + " / " + num2 + " = " + sumdi + ".");
+            }
+            catch
+            {
+                Console.WriteLine("Syöttämäsi tieto on virheellinen!");
+                goto ALKU;
+            }
+            
+
+            
 
             if (test == 0)
             {
@@ -268,15 +312,27 @@ namespace Harjoitussivu3
 
         static void tehtava9(int test)
         {
-            Console.WriteLine("Anna kaksi lukua niin kerron niiden jakojäännöksen.");
-            Console.WriteLine("Anna ensimmäinen luku: ");
-            float num1 = float.Parse(Console.ReadLine());
+            ALKU:
+            try
+            {
+                Console.WriteLine("Anna kaksi lukua niin kerron niiden jakojäännöksen.");
+                Console.WriteLine("Anna ensimmäinen luku: ");
+                float num1 = float.Parse(Console.ReadLine());
 
-            Console.WriteLine("Anna toinen luku: ");
-            float num2 = float.Parse(Console.ReadLine());
-            float sum = num1 % num2;
+                Console.WriteLine("Anna toinen luku: ");
+                float num2 = float.Parse(Console.ReadLine());
+                float sum = num1 % num2;
 
-            Console.WriteLine("Lukujen " + num1 + " ja " + num2 + " jakojäännös on " + sum);
+                Console.WriteLine("Lukujen " + num1 + " ja " + num2 + " jakojäännös on " + sum);
+            }
+            catch
+            {
+                Console.WriteLine("Syöttämäsi tieto on virheellinen!");
+                goto ALKU;
+            }
+            
+
+           
 
             if (test == 0)
             {
@@ -290,8 +346,24 @@ namespace Harjoitussivu3
 
         static void tehtava10(int test)
         {
+            ALKU:
+
             Console.WriteLine("Anna minulle kokonaisluku 1-10 ja näytän sinulle sen koko kertotaulun kymmeneen asti.");
-            int num = int.Parse(Console.ReadLine());
+            int num = 0;
+
+            
+
+            try
+            {
+                num = int.Parse(Console.ReadLine());
+            }
+            catch
+            {
+                Console.WriteLine("Syöttämäsi tieto on virheellinen!");
+                goto ALKU;
+            }
+
+            
             int sum;
             if (num > 0 && num < 11)
             {
@@ -319,8 +391,22 @@ namespace Harjoitussivu3
 
         static void tehtava11(int test)
         {
+            ALKU:
             Console.WriteLine("Kerro ikäsi: ");
-            string age = Console.ReadLine();
+            int age = 0;
+
+            
+
+            try
+            {
+                age = int.Parse(Console.ReadLine());
+            }
+            catch
+            {
+                Console.WriteLine("Syöttämäsi tieto on virheellinen!");
+                goto ALKU;
+            }
+            
 
             Console.WriteLine(age + ", näytät ikäistäsi nuoremmalta.");
 
@@ -336,8 +422,22 @@ namespace Harjoitussivu3
 
         static void tehtava12(int test)
         {
+            ALKU:
             Console.WriteLine("Anna kokonaisluku joka on suurempi kuin 10: ");
-            int num = int.Parse(Console.ReadLine());
+            int num = 0;
+
+            
+
+            try
+            {
+                num = int.Parse(Console.ReadLine());
+            }
+            catch
+            {
+                Console.WriteLine("Syöttämäsi tieto on virheellinen!");
+                goto ALKU;
+            }
+            
 
             string text = "";
             string text2 = "";
@@ -363,6 +463,7 @@ namespace Harjoitussivu3
             else
             {
                 Console.WriteLine("Luvun täytyy olla suurempi kuin 10!");
+                goto ALKU;
             }
             
 
@@ -378,8 +479,22 @@ namespace Harjoitussivu3
 
         static void tehtava13(int test)
         {
+            ALKU:
             Console.WriteLine("Anna minulle sana niin vaihdan sen ensimmäisen ja viimeisen kirjaimen paikkaa:");
-            string word = Console.ReadLine();
+            string word = "";
+
+            
+
+            try
+            {
+                word = Console.ReadLine();
+            }
+            catch
+            {
+                Console.WriteLine("Syöttämäsi tieto on virheellinen!");
+                goto ALKU;
+            }
+            
 
             int length = word.Length;
             char fc = word[length - 1];
@@ -404,14 +519,27 @@ namespace Harjoitussivu3
 
         static void tehtava14(int test)
         {
-
+            ALKU:
             Console.WriteLine("Anna minulle 2 kokonaislukua ja kerron kuinka moni niistä on positiivisia tai negatiivisia.");
 
-            Console.WriteLine("Anna ensimmäinen luku: ");
-            int num1 = int.Parse(Console.ReadLine());
+            int num1 = 0;
+            int num2 = 0;
 
-            Console.WriteLine("Anna toinen luku: ");
-            int num2 = int.Parse(Console.ReadLine());
+            
+            try
+            {
+                Console.WriteLine("Anna ensimmäinen luku: ");
+                num1 = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Anna toinen luku: ");
+                num2 = int.Parse(Console.ReadLine());
+            }
+            catch
+            {
+                Console.WriteLine("Syöttämäsi tieto on virheellinen!");
+                goto ALKU;
+            }
+            
 
             if (num1 < 0 && num2 < 0)
             {

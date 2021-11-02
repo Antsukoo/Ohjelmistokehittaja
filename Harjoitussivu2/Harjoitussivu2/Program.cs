@@ -261,41 +261,44 @@ namespace Harjoitussivu2
         }
 
         static void tehtava5(int test)
-        {
-            
-
-            int number = 0;
-
-            bool got = false;
-
-            while (!got)
-            {
-                Console.WriteLine("Mitä haluaisit syöttää näistä minulle: kokonaisluku (k) vai double-luvun (d), jotka kasvattavat annosta vai merkkijonon (m), joka syöttää annoksen minulle.");
-                string letter = Console.ReadLine();
+        {    
+            Console.WriteLine("Mitä haluaisit syöttää näistä minulle: kokonaisluku (k) vai double-luvun (d), jotka kasvattavat annosta vai merkkijonon (m), joka syöttää annoksen minulle.");
+                
+            ALKU:
+            string letter = Console.ReadLine().ToLower();
 
                 
 
-                switch (letter)
-                {
-                    case "k":
-                        number++;
-                        break;
+            switch (letter)
+            {
+                case "k":
+                    Console.WriteLine("Anna jokin kokonaisluku: ");
+                    int num = int.Parse(Console.ReadLine());
 
-                    case "d":
-                        number++;
-                        break;
+                    Console.WriteLine("Syötit luvun " + num + " ja lisäsin siihen yhden: " + (num + 1));
+                    break;
 
-                    case "m":
-                        got = true;
-                        break;
+                case "d":
+                    Console.WriteLine("Anna jokin desimaaliluku: ");
+                    int doub = int.Parse(Console.ReadLine());
 
-                    default:
-                        Console.WriteLine("Sinun täytyy valita joko k, d tai m.");
-                        break;
-                }
+                    Console.WriteLine("Syötit luvun " + doub + " ja lisäsin siihen yhden: " + (doub + 1));
+                    break;
+
+                case "m":
+                    Console.WriteLine("Anna jokin kokonaisluku: ");
+                    string merk = Console.ReadLine();
+
+                    Console.WriteLine("Syötit merkkijonon " + merk + " ja lisäsin siihen tähden: " + merk + "*");
+                    break;
+
+                default:
+                    Console.WriteLine("Sinun täytyy syöttää joko k, d tai m-kirjain.");
+                    goto ALKU;
             }
+            
 
-            Console.WriteLine("Syötit: " + number + "*");
+            
             
 
             if (test == 0)
